@@ -1,0 +1,71 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: "NHaasGroteskDSPro-65Md" !important;
+}
+.landingContainer{
+ height: 100vh;
+ /* width: 100vw; */
+ overflow: hidden;
+
+}
+.landingImage{
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  overflow: hidden;
+  
+}
+.img{
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  background-image: url("C:\Users\vikash sain\OneDrive\Desktop\My App\foodweb\src\Images\mainpic.jpg");
+  background-attachment: fixed;
+
+}
+.img:hover{
+  opacity: 0.6;
+}
+
+
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+#carousel
+{
+  width: 80%;
+height:70vh;
+margin-left: 150px;
+
+}
+.carousel-item {
+  width: 80%;
+  height:100%;
+ 
+}
+#carousel img
+{
+  
+  height: 100%;
+  width: 50%;
+object-fit:fill;
+}
+
+
+.containar{
+  
+  margin-left: 40%;
+ 
+  justify-content: center;
+
+}
+.errorclr {
+  color:red;
+}
