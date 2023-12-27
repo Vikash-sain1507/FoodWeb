@@ -117,9 +117,7 @@ export default function Login() {
 
                   </div>
                   
-                {/* <Checkbox name="Checkbox" color='primary'>
-
-                  </Checkbox>seller */}
+               
                <Stack direction={"row" } justifyContent={"center"} alignItems={"center"}  >
                <Typography>Are you a {owner==="Buyer"?"Seller": "Buyer"} </Typography> <Link sx={{textDecoration:"none"}} onClick={()=>setOwner(()=>owner==="Seller"?"Buyer": "Seller")}>Click here</Link>
                </Stack>
