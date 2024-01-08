@@ -1,25 +1,38 @@
-import React from 'react'
+import {React, useState }from 'react'
 import { useLocation } from 'react-router-dom';
 import { Grid, Card, CardContent, Typography, CardActionArea, CardMedia, Button, CardActions, Stack, Box } from '@mui/material';
 import Container from '@mui/material/Container';
 import { BurgerData } from '../Data/Data';
 import { useDispatch, useSelector } from 'react-redux';
-import { AddCart } from '../REDUX/cartSystem';
+import { AddCart, decquantity, decrement, incquantity, removeCart } from '../REDUX/cartSystem';
 import Navbar from './Navbar';
+import DeleteIcon from '@mui/icons-material/Delete';
 
 
 function Cart() {
     const { name } = useSelector((state) => state);
-    const sd̥ata = useSelector((state) => state);
-    console.log("🚀 ~ file: Cart.jsx:14 ~ Cart ~ sd̥ata:", sd̥ata)
+    const dispatch=useDispatch();
+    const data = useSelector((state) => state);
 
     var cartData = name.cart
-    console.log("🚀 ~ file: Cart.jsx:13 ~ Cart ~ cartData:", cartData)
-    const sho̥w = BurgerData[0].info;
-    console.log("🚀 ~ file: Cart.jsx:19 ~ Cart ~ sho̥w:", sho̥w)
+    const show = BurgerData[0].info;
+    const [quantity,setQuantity] = useState(1);
+    
+    function quantityVal(type,id){
+        if(type==="minus"){
+            // setQuantity(quantity-1);
+            dispatch(decquantity(id))
+        }
+        else{
+            // setQuantity(quantity+1);
+            dispatch(incquantity(id))    
+
+    
+        }
+       }
 
 
-
+    
     return (
         <>
             <Navbar />
@@ -40,6 +53,14 @@ function Cart() {
                                 <Typography>{`Quantity : ${result.quantity}`}</Typography>
                                 <Typography>{`Price : ${result.mrp}`}</Typography>
                             </Stack>
+                            <Stack sx={{justifyContent:"center"}}><DeleteIcon onClick={()=>dispatch(removeCart(index))} /> </Stack>
+                            <Stack sx={{justifyContent:"center"}}>
+                            <Stack spacing={2} direction={"row"} justifyContent={"center"}>
+                        <Button onClick={()=>quantityVal("minus",result.id)}>-</Button>
+                        <Typography>{result.quantity}</Typography>
+                        <Button onClick={()=>quantityVal("plus",result.id)}>+</Button>
+                        </Stack>
+                        </Stack>
                         </Stack>
                     ))}
                 </Stack>

@@ -3,7 +3,7 @@ import { Box, Button, Stack, Typography } from '@mui/material'
 import { BurgerData } from '../Data/Data'
 import { Alldata } from '../Data/Alldata';
 import { useLocation, useSearchParams } from 'react-router-dom';
-
+import Footer from './Footer';
 
 
 export default function Product() {
@@ -23,6 +23,7 @@ export default function Product() {
     
 
     return (
+        <>
         <Box direction={"row"} display={"flex"} justifyContent={"space-around"}marginTop={"30px"}>
             <Stack  width={"580px"} height={"200px"}>
                 <Stack>
@@ -69,6 +70,8 @@ export default function Product() {
 
 
         </Box>
+       
+        </>
     )
 }
 
