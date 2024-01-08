@@ -3,20 +3,26 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 
 import App from './App';
-// import "bootstrap/dist/css/bootstrap.css";
-// import "remixicon/fonts/remixicon.css";
-// import "slick-carousel/slick/slick.css";
-// import "slick-carousel/slick/slick-theme.css";
+import { Provider } from 'react-redux';
+ import store  from './REDUX/Store';
+ import{PersistGate} from 'redux-persist/integration/react';
+ import {persistStore} from 'redux-persist';
+
 
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+let persistor = persistStore(store);
 root.render(
-  
+    <>
+  <Provider store={store}>
+    <PersistGate persistor={persistor}>
     <App />
+    </PersistGate>
+  
+    </Provider>
+    </>
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+
 

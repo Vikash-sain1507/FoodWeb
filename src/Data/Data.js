@@ -31,9 +31,9 @@ export const BurgerAllData = [
     fav:
       <FavoriteIcon />
     ,
-    btn: <Button variant="contained" color="success">
-      Success
-    </Button>,
+    mrp: 7,
+    discount:"10%",
+    quantity:1
   },
   {
     id: 2,
@@ -43,9 +43,9 @@ export const BurgerAllData = [
     info: " A cheeseburger is a hamburger with a slice of melted cheese on top of the meat patty, added near the end of the cooking time. Cheeseburgers can include variations in structure, ingredients and composition.",
     fav:
       <FavoriteIcon />,
-    btn: <Button variant="contained" color="success">
-      Success
-    </Button>,
+      mrp: 9,
+      discount:"10%",
+      quantity:1
   },
   {
     id: 3,
@@ -55,9 +55,9 @@ export const BurgerAllData = [
     info: "A chicken burger makes for a quick midweek meal or weekend BBQ's with friends! Crispy seasoned chicken breast, topped with mandatory melted cheese, piled onto soft rolls with onion, avocado, lettuce, tomato and garlic mayo. ",
     fav:
       <FavoriteIcon />,
-    btn: <Button variant="contained" color="success">
-      Success
-    </Button>,
+      mrp: 5,
+      discount:"10%",
+      quantity:1
   },
   {
     id: 4,
@@ -68,9 +68,9 @@ export const BurgerAllData = [
     fav:
       <FavoriteIcon />
     ,
-    btn: <Button variant="contained" color="success">
-      Success
-    </Button>,
+    mrp: 14,
+    discount:"10%",
+    quantity:1
   },
   {
     id: 5,
@@ -80,9 +80,9 @@ export const BurgerAllData = [
     info: "Some veggie burgers use vegetable-sourced protein to imitate meat's texture. Others are simply patties that don't pretend to be anything like a beef burger. Commercially available veggie burgers may contain: Vegetable protein (derived from beans, soy, peas or other source) ",
     fav:
       <FavoriteIcon />,
-    btn: <Button variant="contained" color="success">
-      Success
-    </Button>,
+      mrp: 5,
+      discount:"10%",
+      quantity:1
   },
   {
     id: 6,
@@ -92,10 +92,10 @@ export const BurgerAllData = [
     info: "Some veggie burgers use vegetable-sourced protein to imitate meat's texture. Others are simply patties that don't pretend to be anything like a beef burger. Commercially available veggie burgers may contain: Vegetable protein (derived from beans, soy, peas or other source) ",
     fav:
       <FavoriteIcon />,
-    btn: <Button variant="contained" color="success">
-      Success
-    </Button>,
-  },
+      mrp: 5,
+      discount:"10%",
+      quantity:1
+  }
 
 
 
@@ -103,16 +103,16 @@ export const BurgerAllData = [
 export const BurgerData = [
   {
     id: 1,
-    type: " bison burger ",
+    type: " Bison Burger ",
     stock: "Available ",
     img: img1,
     info: "The American Heart Association recommended buffalo burgers in 1997 as more heart-healthy than chicken or beef. The burger is high in nutrients such as protein, zinc, and vitamin B12. Buffalo burgers are more healthy than beef because bison do not store as much fat as cattle.",
     fav:
       <FavoriteIcon />
-    ,
-    btn: <Button variant="contained" color="success">
-      Success
-    </Button>,
+    ,   
+    mrp:5,
+    discount:"10%",
+    quantity:1
   },
   {
     id: 2,
@@ -122,9 +122,9 @@ export const BurgerData = [
     info: " A cheeseburger is a hamburger with a slice of melted cheese on top of the meat patty, added near the end of the cooking time. Cheeseburgers can include variations in structure, ingredients and composition.",
     fav:
       <FavoriteIcon />,
-    btn: <Button variant="contained" color="success">
-      Success
-    </Button>,
+      mrp: 7,
+      discount:"10%",
+      quantity:1
   },
   {
     id: 3,
@@ -134,15 +134,15 @@ export const BurgerData = [
     info: "A chicken burger makes for a quick midweek meal or weekend BBQ's with friends! Crispy seasoned chicken breast, topped with mandatory melted cheese, piled onto soft rolls with onion, avocado, lettuce, tomato and garlic mayo. ",
     fav:
       <FavoriteIcon />,
-    btn: <Button variant="contained" color="success">
-      Success
-    </Button>,
+      mrp: 6,
+      discount:"10%",
+      quantity:1
   },
 
 ]
 export const pizzaData = [
   {
-    id: 1,
+    id: 7,
     type: " bison pizza ",
     stock: "Available ",
     img: pizzaimg1,
@@ -150,33 +150,33 @@ export const pizzaData = [
     fav:
       <FavoriteIcon />
     ,
-    btn: <Button variant="contained" color="success">
-      Success
-    </Button>,
+    mrp: 8,
+    discount:"10%",
+    quantity:1
   },
   {
-    id: 2,
+    id: 8,
     type: "cheese pizza ",
     stock: "Not Available ",
     img: pizzaimg2,
     info: " A cheeseburger is a hamburger with a slice of melted cheese on top of the meat patty, added near the end of the cooking time. Cheeseburgers can include variations in structure, ingredients and composition.",
     fav:
       <FavoriteIcon />,
-    btn: <Button variant="contained" color="success">
-      Success
-    </Button>,
+      mrp: 3,
+      discount:"10%",
+      quantity:1
   },
   {
-    id: 3,
+    id: 9,
     type: "chikan pizza",
     stock: "Available ",
     img: pizzaimg3,
     info: "A chicken burger makes for a quick midweek meal or weekend BBQ's with friends! Crispy seasoned chicken breast, topped with mandatory melted cheese, piled onto soft rolls with onion, avocado, lettuce, tomato and garlic mayo. ",
     fav:
       <FavoriteIcon />,
-    btn: <Button variant="contained" color="success">
-      Success
-    </Button>,
+      mrp: 4,
+      discount:"10%",
+      quantity:1
   },
 
 
@@ -186,7 +186,7 @@ export const pizzaData = [
 ]
 export const PizzaAllData = [
   {
-    id: 1,
+    id: 7,
     type: " bison pizza ",
     stock: "Available ",
     img: pizzaimg1,
@@ -194,38 +194,38 @@ export const PizzaAllData = [
     fav:
       <FavoriteIcon />
     ,
-    btn: <Button variant="contained" color="success">
-      Success
-    </Button>,
+    mrp: 5,
+    discount:"10%",
+    quantity:1
   },
   {
-    id: 2,
+    id: 8,
     type: "cheese pizza ",
     stock: "Not Available ",
     img: pizzaimg2,
     info: " A cheeseburger is a hamburger with a slice of melted cheese on top of the meat patty, added near the end of the cooking time. Cheeseburgers can include variations in structure, ingredients and composition.",
     fav:
       <FavoriteIcon />,
-    btn: <Button variant="contained" color="success">
-      Success
-    </Button>,
+      mrp: 5,
+      discount:"10%",
+      quantity:1
   },
   {
-    id: 3,
+    id: 9,
     type: "chikan pizza",
     stock: "Available ",
     img: pizzaimg3,
     info: "A chicken burger makes for a quick midweek meal or weekend BBQ's with friends! Crispy seasoned chicken breast, topped with mandatory melted cheese, piled onto soft rolls with onion, avocado, lettuce, tomato and garlic mayo. ",
     fav:
       <FavoriteIcon />,
-    btn: <Button variant="contained" color="success">
-      Success
-    </Button>,
+      mrp: 5,
+      discount:"10%",
+      quantity:1
   },
 
 
   {
-    id: 4,
+    id: 10,
     type: "  pizza ",
     stock: "Available ",
     img: pizzaimg4,
@@ -233,40 +233,40 @@ export const PizzaAllData = [
     fav:
       <FavoriteIcon />
     ,
-    btn: <Button variant="contained" color="success">
-      Success
-    </Button>,
+    mrp: 5,
+    discount:"10%",
+    quantity:1
   },
   {
-    id: 5,
+    id: 11,
     type: " pizza ",
     stock: "Not Available ",
     img: pizzaimg6,
     info: " A cheeseburger is a hamburger with a slice of melted cheese on top of the meat patty, added near the end of the cooking time. Cheeseburgers can include variations in structure, ingredients and composition.",
     fav:
       <FavoriteIcon />,
-    btn: <Button variant="contained" color="success">
-      Success
-    </Button>,
+      mrp: 5,
+      discount:"10%",
+      quantity:1
   },
   {
-    id: 6,
+    id: 12,
     type: "chikan pizza",
     stock: "Available ",
     img: pizzaimg7,
     info: "A chicken burger makes for a quick midweek meal or weekend BBQ's with friends! Crispy seasoned chicken breast, topped with mandatory melted cheese, piled onto soft rolls with onion, avocado, lettuce, tomato and garlic mayo. ",
     fav:
       <FavoriteIcon />,
-    btn: <Button variant="contained" color="success">
-      Success
-    </Button>,
+      mrp: 5,
+      discount:"10%",
+      quantity:1
   },
 
 
 ]
 export const MomosData = [
   {
-    id: 1,
+    id: 13,
     type: " bison Momos ",
     stock: "Available ",
     img: momoimg1,
@@ -274,40 +274,40 @@ export const MomosData = [
     fav:
       <FavoriteIcon />
     ,
-    btn: <Button variant="contained" color="success">
-      Success
-    </Button>,
+    mrp: 5,
+    discount:"10%",
+    quantity:1
   },
   {
-    id: 2,
+    id: 14,
     type: "cheese Momos ",
     stock: "Not Available ",
     img: momoimg2,
     info: " A cheeseburger is a hamburger with a slice of melted cheese on top of the meat patty, added near the end of the cooking time. Cheeseburgers can include variations in structure, ingredients and composition.",
     fav:
       <FavoriteIcon />,
-    btn: <Button variant="contained" color="success">
-      Success
-    </Button>,
+      mrp: 6,
+      discount:"10%",
+      quantity:1
   },
   {
-    id: 3,
+    id: 15,
     type: "chikan Momos",
     stock: "Available ",
     img: momoimg3,
     info: "A chicken burger makes for a quick midweek meal or weekend BBQ's with friends! Crispy seasoned chicken breast, topped with mandatory melted cheese, piled onto soft rolls with onion, avocado, lettuce, tomato and garlic mayo. ",
     fav:
       <FavoriteIcon />,
-    btn: <Button variant="contained" color="success">
-      Success
-    </Button>,
+      mrp: 10,
+      discount:"10%",
+      quantity:1
   },
 
 
 ]
 export const MomosAllData = [
   {
-    id: 1,
+    id: 13,
     type: " bison Momos ",
     stock: "Available ",
     img: momoimg1,
@@ -315,38 +315,38 @@ export const MomosAllData = [
     fav:
       <FavoriteIcon />
     ,
-    btn: <Button variant="contained" color="success">
-      Success
-    </Button>,
+    mrp: 5,
+    discount:"10%",
+    quantity:1
   },
   {
-    id: 2,
+    id: 14,
     type: "cheese Momos ",
     stock: "Not Available ",
     img: momoimg2,
     info: " A cheeseburger is a hamburger with a slice of melted cheese on top of the meat patty, added near the end of the cooking time. Cheeseburgers can include variations in structure, ingredients and composition.",
     fav:
       <FavoriteIcon />,
-    btn: <Button variant="contained" color="success">
-      Success
-    </Button>,
+      mrp: 5,
+      discount:"10%",
+      quantity:1
   },
   {
-    id: 3,
+    id: 15,
     type: "chikan Momos",
     stock: "Available ",
     img: momoimg3,
     info: "A chicken burger makes for a quick midweek meal or weekend BBQ's with friends! Crispy seasoned chicken breast, topped with mandatory melted cheese, piled onto soft rolls with onion, avocado, lettuce, tomato and garlic mayo. ",
     fav:
       <FavoriteIcon />,
-    btn: <Button variant="contained" color="success">
-      Success
-    </Button>,
+      mrp: 5,
+      discount:"10%",
+      quantity:1
   },
 
 
   {
-    id: 4,
+    id: 16,
     type: "  Momos ",
     stock: "Available ",
     img: momoimg4,
@@ -354,33 +354,34 @@ export const MomosAllData = [
     fav:
       <FavoriteIcon />
     ,
-    btn: <Button variant="contained" color="success">
-      Success
-    </Button>,
+    mrp: 5,
+    discount:"10%",
+    quantity:1
   },
   {
-    id: 5,
+    id: 17,
     type: " Momos ",
     stock: "Not Available ",
     img: momoimg6,
     info: " A cheeseburger is a hamburger with a slice of melted cheese on top of the meat patty, added near the end of the cooking time. Cheeseburgers can include variations in structure, ingredients and composition.",
     fav:
       <FavoriteIcon />,
-    btn: <Button variant="contained" color="success">
-      Success
-    </Button>,
+      mrp: 5,
+      discount:"10%",
+      quantity:1
+
   },
   {
-    id: 6,
+    id: 18,
     type: " Momos",
     stock: "Available ",
     img: momoimg7,
     info: "A chicken burger makes for a quick midweek meal or weekend BBQ's with friends! Crispy seasoned chicken breast, topped with mandatory melted cheese, piled onto soft rolls with onion, avocado, lettuce, tomato and garlic mayo. ",
     fav:
       <FavoriteIcon />,
-    btn: <Button variant="contained" color="success">
-      Success
-    </Button>,
+      mrp: 5,
+      discount:"10%",
+      quantity:1
   },
 
 

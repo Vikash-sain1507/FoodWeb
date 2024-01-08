@@ -18,6 +18,9 @@ import Register from './screens/Register.jsx';
 import Protected from './componets/Protected.jsx';
 import AllProductburger from './componets/AllProductburger.jsx';
 import Cart from './componets/Cart.jsx';
+import { Provider } from 'react-redux';
+import store from './REDUX/Store.jsx';
+import Product from './componets/Product.jsx';
 
 
 
@@ -25,25 +28,26 @@ import Cart from './componets/Cart.jsx';
 
 function App() {
   return (
+    <Provider store={store}>
     <Router>
 
       <div>
         <Routes>
-            
-          <Route exact path='/' element={<Protected Componet={Home} />} />
-          <Route exact path='/login' element= {<Login />} />
-          <Route exact path='/register' element={<Register/>}/>
-          <Route exact path='/AllProductburger' element={<AllProductburger/>}/>
-          <Route  path='/Cart' element={<Cart />}/>
-          
-        
 
-          
+          <Route exact path='/' element={<Protected Componet={Home} />} />
+          <Route exact path='/login' element={<Login />} />
+          <Route exact path='/register' element={<Register />} />
+          <Route exact path='/AllProductburger' element={<AllProductburger />} />
+          <Route path='/Cart' element={<Cart />} />
+          <Route path='/Product' element={<Product />} />
+          <Route path='/Product/:id' element={<Product />} />
 
         </Routes>
       </div>
+    
 
     </Router>
+    </Provider>
   )
 };
 

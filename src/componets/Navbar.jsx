@@ -1,12 +1,17 @@
 import React from 'react'
-import { Link, useNavigate } from 'react-router-dom'
+import { Link, NavLink, useNavigate } from 'react-router-dom'
 import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
 import { Stack,Badge, IconButton } from '@mui/material';
+import Cart from './Cart';
+import cartSystem from '../REDUX/cartSystem';
+import { useSelector } from 'react-redux';
 
 
 
 
 export default function Navbar() {
+  const {name}=useSelector((state)=>state);
+ 
   const navigate =useNavigate();
   const logout=()=>{
     alert("logut succssefull")
@@ -18,7 +23,7 @@ export default function Navbar() {
   
 
   return (
-    <div><nav className="navbar navbar-expand-lg navbar-dark bg-success" style={{position:"fixed",width:"100%",zIndex:"999"}} >
+    <div><nav className="navbar navbar-expand-lg navbar-dark bg-success" style={{position:"fixed",top:0,width:"100%",zIndex:"999"}} >
     <div className="container-fluid">
       <Link className="navbar-brand fs-4 fst-italic  " to="/">GoFood</Link>
       <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -29,16 +34,7 @@ export default function Navbar() {
           <li className="nav-item">
             <Link className="nav-link active" aria-current="page" to="/">Home</Link>
           </li>
-          {/* <li className="nav-item">
-            <Link className="nav-link" to="/login">Login</Link>
-          </li>
-
-           {/* <li>{auth ? <Link  onClick={logout} to="/login">logout</Link> :
-          <Link to="/login">login</Link>}</li> 
-          <li> 
-            <Link className='nav-link' to="/Register">Register</Link>
-
-          </li> */}
+        
         
           
      
@@ -48,11 +44,14 @@ export default function Navbar() {
       </div>
      <div style={{marginRight:"35px"}}>
       <Stack spacing={2} direction="row">
+       
+        <NavLink className='nav-link'to="/cart" >
         <IconButton>
-        <Badge badgeContent={5} color='primary'>
+        <Badge badgeContent={name.cart.length} color='primary'>
+          
         <AddShoppingCartIcon sx={{fontSize:"30px",color:"white"}} />
         </Badge>
-        </IconButton>
+        </IconButton></NavLink>
       
 
 
