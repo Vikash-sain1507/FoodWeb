@@ -93,7 +93,7 @@ const navigation=useNavigate();
         title={val.type}
         subheader={val.stock}
       />
-      <CardMedia onClick={()=>navigation("/Product")}
+      <CardMedia onClick={()=>navigation(`/Product/${val.id}`)}
         component="img"
         height="194"
         image={val.img}

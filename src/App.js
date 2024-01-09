@@ -21,6 +21,7 @@ import Cart from './componets/Cart.jsx';
 import { Provider } from 'react-redux';
 import store from './REDUX/Store.jsx';
 import Product from './componets/Product.jsx';
+import AllProduct from './componets/AllProduct.jsx';
 
 
 
@@ -35,6 +36,7 @@ function App() {
         <Routes>
 
           <Route exact path='/' element={<Protected Componet={Home} />} />
+          <Route exact path='/AllProduct' element={<AllProduct/>}/>
           <Route exact path='/login' element={<Login />} />
           <Route exact path='/register' element={<Register />} />
           <Route exact path='/AllProductburger' element={<AllProductburger />} />

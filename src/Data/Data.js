@@ -110,7 +110,7 @@ export const BurgerData = [
     fav:
       <FavoriteIcon />
     ,   
-    mrp:5,
+    mrp: 5,
     discount:"10%",
     quantity:1
   },

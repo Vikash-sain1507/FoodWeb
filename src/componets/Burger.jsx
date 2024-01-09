@@ -4,6 +4,7 @@ import BurgerCard from './BurgerCard'
 import ReadMoreIcon from '@mui/icons-material/ReadMore';
 import { Button, Typography } from '@mui/material';
 import { Link, useNavigate, useLocation} from 'react-router-dom';
+import Navbar from './Navbar';
 
 function Burger() {
   const  location  = useLocation();
@@ -13,8 +14,9 @@ function Burger() {
 
   return (
     <div>
+      
       <div style={{display:"flex",}}>
-      <Typography sx={{typographyextAlign:"center",backgroundColor:"#e74c3c;   ",width:"100px",borderRadius:"5px",}}>{product}</Typography>
+      <Typography sx={{typographyextAlign:"center",backgroundColor:"#e74c3c;   ",width:"100px",borderRadius:"5px",}} id="Burger">{product}</Typography>
 
       </div>
     <div  style={{display:"flex",flexDirection:"row",flexWrap:"wrap", justifyContent:"space-around", padding:"30px"}}>
