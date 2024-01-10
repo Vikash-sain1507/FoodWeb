@@ -40,6 +40,7 @@ const cartSystem = createSlice({
             state.total -= state.cart[action.payload].quantity * state.cart[action.payload].mrp
             state.cart.splice(action.payload, 1);
             state.quantity -= 1;
+            
 
 
         },
