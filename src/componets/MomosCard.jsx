@@ -28,6 +28,7 @@ import Slide from '@mui/material/Slide';
 import { TransitionProps } from '@mui/material/transitions';
 import { useNavigate } from 'react-router-dom';
 import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
+import Navbar from './Navbar';
 
 interface ExpandMoreProps extends IconButtonProps {
   expand: boolean;
@@ -77,6 +78,8 @@ export default function MomosCard({val}) {
   const navigation=useNavigate();
 
   return (
+    <>
+    
     <Card sx={{ maxWidth: 345 }} >
       <CardHeader
         avatar={
@@ -92,7 +95,7 @@ export default function MomosCard({val}) {
         title={val.type}
         subheader={val.stock}
       />
-      <CardMedia onClick={()=>navigation("/Product")}
+      <CardMedia onClick={()=>navigation(`/Product/${val.id}`)}
         component="img"
         height="194"
         image={val.img}
@@ -138,6 +141,6 @@ export default function MomosCard({val}) {
 
     </Card>
 
-
+    </>
   );
 }

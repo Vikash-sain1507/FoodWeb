@@ -7,6 +7,7 @@ import { PizzaAllData } from '../Data/Data';
 import { MomosAllData } from '../Data/Data';
 import { useDispatch, useSelector } from 'react-redux';
 import { AddCart } from '../REDUX/cartSystem';
+import Navbar from './Navbar';
 
 function AllProductburger() {
     const { name } = useSelector((state) => state);
@@ -19,8 +20,8 @@ function AllProductburger() {
     const navigation=useNavigate();
     return (
         <div>
-
-            <Container maxWidth='lg'>
+        <Navbar/>
+            <Container maxWidth='lg' sx={{marginTop:"100px"}}>
                 <Typography variant='h4' align='center' style={{ marginTop: "50px" }}>
                     ALL PRODUCT LIST
                 </Typography>

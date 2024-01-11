@@ -13,10 +13,10 @@ export default function Footer() {
     
 
       <Stack direction={"row"} spacing={2}  justifyContent={"end"} marginRight={"50px"} marginTop={"30px"}>
-        <InstagramIcon sx={{backgroundColor:"red",borderRadius:"2px"}}></InstagramIcon>
-        <FacebookIcon sx={{backgroundColor:"red",borderRadius:"2px"}}></FacebookIcon>
-        <WhatsAppIcon sx={{backgroundColor:"red",borderRadius:"2px"}}></WhatsAppIcon>
-        < YouTubeIcon sx={{backgroundColor:"red",borderRadius:"2px"}}></YouTubeIcon>
+        <InstagramIcon sx={{backgroundColor:"#9e0c1e",borderRadius:"3px"}}></InstagramIcon>
+        <FacebookIcon sx={{backgroundColor:"#2900e4",borderRadius:"3px"}}></FacebookIcon>
+        <WhatsAppIcon sx={{backgroundColor:"#22c40e",borderRadius:"50px",}}></WhatsAppIcon>
+        < YouTubeIcon sx={{backgroundColor:"red",borderRadius:"3px"}}></YouTubeIcon>
       </Stack >
       <Stack width={"100%"} alignItems={'center'} marginTop={"120px"} >© 2023 GoFOO Inc
       </Stack>

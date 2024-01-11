@@ -24,6 +24,7 @@ import FavoriteIcon from '@mui/icons-material/Favorite';
 export const BurgerAllData = [
   {
     id: 1,
+    category:"burger",
     type: " bison burger ",
     stock: "Available ",
     img: img1,
@@ -37,6 +38,7 @@ export const BurgerAllData = [
   },
   {
     id: 2,
+    category:"burger",
     type: "cheese burger ",
     stock: "Not Available ",
     img: img2,
@@ -49,6 +51,7 @@ export const BurgerAllData = [
   },
   {
     id: 3,
+    category:"burger",
     type: "chikan burger",
     stock: "Available ",
     img: img3,
@@ -61,6 +64,7 @@ export const BurgerAllData = [
   },
   {
     id: 4,
+    category:"burger",
     type: "fish burger ",
     stock: " Not Available ",
     img: img4,
@@ -74,6 +78,7 @@ export const BurgerAllData = [
   },
   {
     id: 5,
+    category:"burger",
     type: "veggie burger ",
     stock: "Available ",
     img: img5,
@@ -86,6 +91,7 @@ export const BurgerAllData = [
   },
   {
     id: 6,
+    category:"burger",
     type: " big burger",
     stock: "Not Available ",
     img: img6,
@@ -103,6 +109,7 @@ export const BurgerAllData = [
 export const BurgerData = [
   {
     id: 1,
+    category:"burger",
     type: " Bison Burger ",
     stock: "Available ",
     img: img1,
@@ -110,12 +117,13 @@ export const BurgerData = [
     fav:
       <FavoriteIcon />
     ,   
-    mrp:5,
+    mrp: 5,
     discount:"10%",
     quantity:1
   },
   {
     id: 2,
+    category:"burger",
     type: "cheese burger ",
     stock: "Not Available ",
     img: img2,
@@ -128,6 +136,7 @@ export const BurgerData = [
   },
   {
     id: 3,
+    category:"burger",
     type: "chikan burger",
     stock: "Available ",
     img: img3,
@@ -143,6 +152,7 @@ export const BurgerData = [
 export const pizzaData = [
   {
     id: 7,
+    category:"pizza",
     type: " bison pizza ",
     stock: "Available ",
     img: pizzaimg1,
@@ -156,6 +166,7 @@ export const pizzaData = [
   },
   {
     id: 8,
+    category:"pizza",
     type: "cheese pizza ",
     stock: "Not Available ",
     img: pizzaimg2,
@@ -168,6 +179,7 @@ export const pizzaData = [
   },
   {
     id: 9,
+    category:"pizza",
     type: "chikan pizza",
     stock: "Available ",
     img: pizzaimg3,
@@ -187,6 +199,7 @@ export const pizzaData = [
 export const PizzaAllData = [
   {
     id: 7,
+    category:"pizza",
     type: " bison pizza ",
     stock: "Available ",
     img: pizzaimg1,
@@ -200,6 +213,7 @@ export const PizzaAllData = [
   },
   {
     id: 8,
+    category:"pizza",
     type: "cheese pizza ",
     stock: "Not Available ",
     img: pizzaimg2,
@@ -212,6 +226,7 @@ export const PizzaAllData = [
   },
   {
     id: 9,
+    category:"pizza",
     type: "chikan pizza",
     stock: "Available ",
     img: pizzaimg3,
@@ -226,6 +241,7 @@ export const PizzaAllData = [
 
   {
     id: 10,
+    category:"pizza",
     type: "  pizza ",
     stock: "Available ",
     img: pizzaimg4,
@@ -239,6 +255,7 @@ export const PizzaAllData = [
   },
   {
     id: 11,
+    category:"pizza",
     type: " pizza ",
     stock: "Not Available ",
     img: pizzaimg6,
@@ -251,6 +268,7 @@ export const PizzaAllData = [
   },
   {
     id: 12,
+    category:"pizza",
     type: "chikan pizza",
     stock: "Available ",
     img: pizzaimg7,
@@ -267,6 +285,7 @@ export const PizzaAllData = [
 export const MomosData = [
   {
     id: 13,
+    category:"momos",
     type: " bison Momos ",
     stock: "Available ",
     img: momoimg1,
@@ -280,6 +299,7 @@ export const MomosData = [
   },
   {
     id: 14,
+    category:"momos",
     type: "cheese Momos ",
     stock: "Not Available ",
     img: momoimg2,
@@ -292,6 +312,7 @@ export const MomosData = [
   },
   {
     id: 15,
+    category:"momos",
     type: "chikan Momos",
     stock: "Available ",
     img: momoimg3,
@@ -308,6 +329,7 @@ export const MomosData = [
 export const MomosAllData = [
   {
     id: 13,
+    category:"momos",
     type: " bison Momos ",
     stock: "Available ",
     img: momoimg1,
@@ -321,6 +343,7 @@ export const MomosAllData = [
   },
   {
     id: 14,
+    category:"momos",
     type: "cheese Momos ",
     stock: "Not Available ",
     img: momoimg2,
@@ -333,6 +356,7 @@ export const MomosAllData = [
   },
   {
     id: 15,
+    category:"momos",
     type: "chikan Momos",
     stock: "Available ",
     img: momoimg3,
@@ -347,6 +371,7 @@ export const MomosAllData = [
 
   {
     id: 16,
+    category:"momos",
     type: "  Momos ",
     stock: "Available ",
     img: momoimg4,
@@ -360,6 +385,7 @@ export const MomosAllData = [
   },
   {
     id: 17,
+    category:"momos",
     type: " Momos ",
     stock: "Not Available ",
     img: momoimg6,
@@ -373,6 +399,7 @@ export const MomosAllData = [
   },
   {
     id: 18,
+    category:"momos",
     type: " Momos",
     stock: "Available ",
     img: momoimg7,

@@ -13,7 +13,7 @@ function Momos() {
 
   return (
    <div>
-      <Typography sx={{textAlign:'center',backgroundColor:"#e74c3c;",width:"100px",borderRadius:"5px"}}>MOOMO</Typography>
+      <Typography sx={{textAlign:'center',backgroundColor:"#e74c3c;",width:"100px",borderRadius:"5px"}} id="#Burger">MOOMO</Typography>
      <div  style={{display:"flex",flexDirection:"row",flexWrap:"wrap", justifyContent:"space-around", padding:"30px"}}>
       
     {

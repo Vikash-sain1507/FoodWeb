@@ -21,6 +21,7 @@ import FavoriteIcon from '@mui/icons-material/Favorite';
 export const Alldata = [
     {
       id: 1,
+      category:"burger",
       type: " bison burger ",
       stock: "Available ",
       img: img1,
@@ -34,6 +35,7 @@ export const Alldata = [
     },
     {
       id: 2,
+      category:"burger",
       type: "cheese burger ",
       stock: "Not Available ",
       img: img2,
@@ -46,6 +48,7 @@ export const Alldata = [
     },
     {
       id: 3,
+      category:"burger",
       type: "chikan burger",
       stock: "Available ",
       img: img3,
@@ -58,6 +61,7 @@ export const Alldata = [
     },
     {
       id: 4,
+      category:"burger",
       type: "fish burger ",
       stock: " Not Available ",
       img: img4,
@@ -71,6 +75,7 @@ export const Alldata = [
     },
     {
       id: 5,
+      category:"burger",
       type: "veggie burger ",
       stock: "Available ",
       img: img5,
@@ -83,6 +88,7 @@ export const Alldata = [
     },
     {
       id: 6,
+      category:"burger",
       type: " big burger",
       stock: "Not Available ",
       img: img6,
@@ -96,6 +102,7 @@ export const Alldata = [
 
     {
       id: 7,
+      category:"pizza",
       type: " bison pizza ",
       stock: "Available ",
       img: pizzaimg1,
@@ -109,6 +116,7 @@ export const Alldata = [
     },
     {
       id: 8,
+      category:"pizza",
       type: "cheese pizza ",
       stock: "Not Available ",
       img: pizzaimg2,
@@ -121,6 +129,7 @@ export const Alldata = [
     },
     {
       id: 9,
+      category:"pizza",
       type: "chikan pizza",
       stock: "Available ",
       img: pizzaimg3,
@@ -135,7 +144,8 @@ export const Alldata = [
   
     {
       id: 10,
-      type: "  pizza ",
+      category:"pizza",
+      type: " veggie pizza ",
       stock: "Available ",
       img: pizzaimg4,
       info: "The American Heart Association recommended buffalo burgers in 1997 as more heart-healthy than chicken or beef. The burger is high in nutrients such as protein, zinc, and vitamin B12. Buffalo burgers are more healthy than beef because bison do not store as much fat as cattle.",
@@ -148,7 +158,8 @@ export const Alldata = [
     },
     {
       id: 11,
-      type: " pizza ",
+      category:"pizza",
+      type: "fish pizza ",
       stock: "Not Available ",
       img: pizzaimg6,
       info: " A cheeseburger is a hamburger with a slice of melted cheese on top of the meat patty, added near the end of the cooking time. Cheeseburgers can include variations in structure, ingredients and composition.",
@@ -160,6 +171,7 @@ export const Alldata = [
     },
     {
       id: 12,
+      category:"pizza",
       type: "chikan pizza",
       stock: "Available ",
       img: pizzaimg7,
@@ -175,6 +187,7 @@ export const Alldata = [
 
     {
       id: 13,
+      category:"momos",
       type: " bison Momos ",
       stock: "Available ",
       img: momoimg1,
@@ -188,6 +201,7 @@ export const Alldata = [
     },
     {
       id: 14,
+      category:"momos",
       type: "cheese Momos ",
       stock: "Not Available ",
       img: momoimg2,
@@ -200,6 +214,7 @@ export const Alldata = [
     },
     {
       id: 15,
+      category:"momos",
       type: "chikan Momos",
       stock: "Available ",
       img: momoimg3,
@@ -214,7 +229,8 @@ export const Alldata = [
   
     {
       id: 16,
-      type: "  Momos ",
+      category:"momos",
+      type: " veggie Momos ",
       stock: "Available ",
       img: momoimg4,
       info: "The American Heart Association recommended buffalo burgers in 1997 as more heart-healthy than chicken or beef. The burger is high in nutrients such as protein, zinc, and vitamin B12. Buffalo burgers are more healthy than beef because bison do not store as much fat as cattle.",
@@ -227,7 +243,8 @@ export const Alldata = [
     },
     {
       id: 17,
-      type: " Momos ",
+      category:"momos",
+      type: "fish Momos ",
       stock: "Not Available ",
       img: momoimg6,
       info: " A cheeseburger is a hamburger with a slice of melted cheese on top of the meat patty, added near the end of the cooking time. Cheeseburgers can include variations in structure, ingredients and composition.",
@@ -240,14 +257,15 @@ export const Alldata = [
     },
     {
       id: 18,
-      type: " Momos",
+      category:"momos",
+      type: "big Momos",
       stock: "Available ",
       img: momoimg7,
       info: "A chicken burger makes for a quick midweek meal or weekend BBQ's with friends! Crispy seasoned chicken breast, topped with mandatory melted cheese, piled onto soft rolls with onion, avocado, lettuce, tomato and garlic mayo. ",
       fav:
         <FavoriteIcon />,
         mrp: 5,
-        discount:"10%",
+        discount:"10%", 
         quantity:1
     },
   
