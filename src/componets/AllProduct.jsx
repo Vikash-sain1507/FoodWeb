@@ -31,24 +31,29 @@ function AllProduct(){
   const [wordEntered,setWordEnterd]= useState("");
   const [filteredData,setfilteredData]= useState(Alldata);
   const [allFoodData,setAllFoodData]= useState([]);
-  console.log("sdfsdf",filteredData);
-
-// useEffect(()=>{
-//  setAllFoodData(Alldata);
-// },[])
   
- useEffect(() => {
-
-  const data=Alldata.filter((value=>{
-      return value.category === wordEntered
-    }));
-  console.log("dddddddd",data.length);
-   data !=0 ? setfilteredData(data) : setfilteredData(Alldata)
+//  useEffect(() => {
+   
+//   const data=Alldata.filter((value=>{
+//       return value.category === wordEntered
+//     }));
  
-  },[wordEntered,Alldata])
+//    data !=0 ? setfilteredData(data) : setfilteredData(Alldata)
+
+//   },[wordEntered,Alldata])
+  
+  useEffect(() => {
+   
+    const data=Alldata.filter((value=>{
+        return value.type.includes(wordEntered)
+      }));
+      data !=0 ? setfilteredData(data) : setfilteredData(Alldata)
+   
+   
+    },[wordEntered,Alldata])
 
 
-
+ 
   const { name } = useSelector((state) => state);
   const [open, setOpen] = React.useState(false);
 
@@ -61,11 +66,14 @@ function AllProduct(){
   };
 
 
-  const [expanded, setExpanded] = React.useState(false);
+  // const [expanded, setExpanded] = React.useState(false);
 
   const dispatch = useDispatch()
   const { state } = useLocation();
   const navigation = useNavigate();
+
+
+
   
   return (
     <>
@@ -75,7 +83,7 @@ function AllProduct(){
       <Container maxWidth='lg' sx={{ marginTop: "100px" }}>
         <form className="d-flex" style={{ marginLeft: "40%", }}>
           <input className=" me-2" style={{ backgroundColor: "#0010" }} type="search" placeholder="Search" aria-label="Search" value={wordEntered} onChange={(e)=>setWordEnterd(e.target.value)  } />
-          <button className="btn btn-outline-success" type="submit" >Search</button>
+          {/* <button className="btn btn-outline-success" type="submit" >Search</button> */}
           {filterdAlldata.length != 0 && 
           filterdAlldata?.slice(0,6).map((value,index)=>{
             

@@ -145,7 +145,7 @@ export const Alldata = [
     {
       id: 10,
       category:"pizza",
-      type: "  pizza ",
+      type: " veggie pizza ",
       stock: "Available ",
       img: pizzaimg4,
       info: "The American Heart Association recommended buffalo burgers in 1997 as more heart-healthy than chicken or beef. The burger is high in nutrients such as protein, zinc, and vitamin B12. Buffalo burgers are more healthy than beef because bison do not store as much fat as cattle.",
@@ -159,7 +159,7 @@ export const Alldata = [
     {
       id: 11,
       category:"pizza",
-      type: " pizza ",
+      type: "fish pizza ",
       stock: "Not Available ",
       img: pizzaimg6,
       info: " A cheeseburger is a hamburger with a slice of melted cheese on top of the meat patty, added near the end of the cooking time. Cheeseburgers can include variations in structure, ingredients and composition.",
@@ -230,7 +230,7 @@ export const Alldata = [
     {
       id: 16,
       category:"momos",
-      type: "  Momos ",
+      type: " veggie Momos ",
       stock: "Available ",
       img: momoimg4,
       info: "The American Heart Association recommended buffalo burgers in 1997 as more heart-healthy than chicken or beef. The burger is high in nutrients such as protein, zinc, and vitamin B12. Buffalo burgers are more healthy than beef because bison do not store as much fat as cattle.",
@@ -244,7 +244,7 @@ export const Alldata = [
     {
       id: 17,
       category:"momos",
-      type: " Momos ",
+      type: "fish Momos ",
       stock: "Not Available ",
       img: momoimg6,
       info: " A cheeseburger is a hamburger with a slice of melted cheese on top of the meat patty, added near the end of the cooking time. Cheeseburgers can include variations in structure, ingredients and composition.",
@@ -258,14 +258,14 @@ export const Alldata = [
     {
       id: 18,
       category:"momos",
-      type: " Momos",
+      type: "big Momos",
       stock: "Available ",
       img: momoimg7,
       info: "A chicken burger makes for a quick midweek meal or weekend BBQ's with friends! Crispy seasoned chicken breast, topped with mandatory melted cheese, piled onto soft rolls with onion, avocado, lettuce, tomato and garlic mayo. ",
       fav:
         <FavoriteIcon />,
         mrp: 5,
-        discount:"10%",
+        discount:"10%", 
         quantity:1
     },
   

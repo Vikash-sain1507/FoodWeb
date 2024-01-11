@@ -41,6 +41,7 @@ const cartSystem = createSlice({
             state.cart.splice(action.payload, 1);
             state.quantity -= 1;
             
+            
 
 
         },

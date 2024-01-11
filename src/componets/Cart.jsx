@@ -20,11 +20,11 @@ function Cart() {
     
     function quantityVal(type,id){
         if(type==="minus"){
-            // setQuantity(quantity-1);
+           
             dispatch(decquantity(id))
         }
         else{
-            // setQuantity(quantity+1);
+            
             dispatch(incquantity(id))    
 
     
